@@ -8,7 +8,7 @@ To have a play with this you can simly clone this repo but I will also walk thro
 
 Start a new directory that will house the API, make a file called `plumber.R`, save it in a directory called `api` and write a function definition, one that you want to expose to the API. For example here I am using the textcat package to guess the language of user text input.
 
-```{r}
+```r
 library(plumber)
 library(textcat)
 
@@ -31,14 +31,14 @@ Easy.
 
 Next we need to add some special comments (decorations) to the file that will act as instructions to plumber on how to interpret your file and how to serve the contents. At a mimimum we need to name the endpoint and give it an address. All plumber comments start with `#*` rather than `#`, this distinguishes them from actual comments in the script. So to our `plumber.R` file above we would add the following just above the function definition.
 
-```{r}
+```r
 #* @param txt A string value, the text to categorise.
 #* @get /textcat
 ```
 
 The `@param` tag will define a parameter input for the function and the `@get` tag will define the http method used. So our file would now look like this:
 
-```{r}
+```r
 library(plumber)
 library(textcat)
 
@@ -61,7 +61,7 @@ This is we're now ready to try out our first API.
 
 To serve the API locally on our machines, we should now open a new script file, I called mine `serve_local.R` and save it in the parent directory of this project. I use this script to store a few commands that will set up a local server and run the API. The script should use the `plumb()` function to run the server:
 
-```{r}
+```r
 library(plumber)
 
 p = plumb(dir = "api")
