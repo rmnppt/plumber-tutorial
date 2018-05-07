@@ -14,10 +14,10 @@ logger = function(req){
 
   }
 
-#* Perform language categorisation
 #* @param txt A string value, the text to categorise.
 #* @get /textcat
-categoriseIt = function(txt = "") {
+#* @description Perform language categorisation
+guessLanguage = function(txt) {
   
   input = txt
   
