@@ -11,8 +11,8 @@ logger = function(req){
       "\n", req$HTTP_USER_AGENT, "@", req$REMOTE_ADDR)
   
   plumber::forward()
-
-  }
+  
+}
 
 #* @param txt A string value, the text to categorise.
 #* @get /textcat
