@@ -18,7 +18,11 @@ In this tutorial we will go through the following steps to create your plumber A
 
 ## Resources
 
-[TO DO]
+Plumber exists thanks to the wonderful work of Jeff Allen ([Github](https://github.com/trestletech), [Twitter](https://twitter.com/trestlejeff)). Go on give him a star, you know you want to. It seems that Jeff is now working at Rstudio and there is a fork of plumber on Rstudio. Not sure which is the one to watch but [here](https://github.com/trestletech/plumber) is the original and [here](https://github.com/rstudio/plumber) is Rstudios fork. You shouldn't start using plumber without having a look at the [fantastic documentation](https://www.rplumber.io/).
+
+When you're done with all of this, check out the section at the bottom for some [further reading](#deployment-and-further-reading).
+
+## Tutorial
 
 ### 1. Write your function(s)
 
@@ -154,3 +158,12 @@ guessLanguage = function(txt) {
 ```
 
 Notice the decorations above the filter, we used @filter to specify we were creating a filter.
+
+## Deployment and Further Reading
+
+Ok now that you have your API running locally its time to deploy it to a remote server. If you are doing this for the first time, I highly recommend using the plumber + analogsea + Digital Ocean option which is [documented here](https://www.rplumber.io/docs/hosting.html#digitalocean).
+
+Whats that? You got your plumber system up and running on Digital Ocean already? And now you are thinking about the next increment in scale? Ok the Digital Ocean is running on a single node and getting blocked up by requests. I might have something for you. I recently discovered [this blog and its [accompanying repo](https://github.com/MarkEdmondson1234/serverless-R-API-appengine) by [Mark Edmonson](http://code.markedmondson.me/), who seems to be developing some great cloud utilities for R. I am going to try it out soon but if you get there before me then let me know how you get on.
+
+
+
