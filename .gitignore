@@ -5,3 +5,6 @@
 
 # compiled README
 *.html
+
+/pres/index_cache/*
+/pres/index_files/*
