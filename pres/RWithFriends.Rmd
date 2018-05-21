@@ -1,6 +1,6 @@
 ---
-title: "A title page"
-subtitle: "A subtitle"
+title: "R With Friends"
+subtitle: "How to integrate with other technologies"
 author: '`r jrPresentation::get_author()`'
 output:
   xaringan::moon_reader:
@@ -21,36 +21,103 @@ set_presentation_options()
 ```
 
 layout: true
-`r add_border(inverse=FALSE)`
+`r add_border(inverse=TRUE)`
 ---
 
-# Jumping Rivers 
+# My Story (relevant I promise!)
 
-  * Standard header and footer
-  * Colour from website
+  ![biofilms](assets/biofilm.jpg)
+
+---
+
+layout: false
+`r add_border(inverse = TRUE)`
+
+---
+
+# Expose R to other people/things.
+
+
+.pull-left[
+
+- Web developers
+  
+- App developers
+  
+- Data Scientists
+  
+- Other back-end systems
+
+- And so on...
+
+]
+
+.pull-right[
+
+  ![friends](assets/friends.jpg)
+
+]
 
 ---
 
 layout: true
 `r add_border(inverse=TRUE)`
- 
----
-class: inverse
-
-# Jumping Rivers
-
-  * Inverse theme 
 
 ---
 
-class: center, middle, inverse
+# One option: A REST API
 
-# Center and middle
+`www.some-address.de/some-functionality?with-parameters`
+
+Examples:
+
+`https://duckduckgo.com/?q=hamburg+R+user+group`
 
 ---
 
-layout: true
-`r add_border(inverse=FALSE)`
+
+# One option: A REST API
+
+`www.some-address.de/some-functionality?with-parameters`
+
+Examples:
+
+```{r}
+"https://{{duckduckgo.com}}/?q=hamburg+R+user+group"
+```
+---
+
+# `plumber` to the rescue
+
+  - Creates a REST API
+  
+  - No specialist knowledge required to get started
+  
+  - Very easy to adapt existing code
+  
+  - Great documentation: https://www.rplumber.io/
+  
+Follow development:
+
+Jeff Allen: https://github.com/trestletech/plumber
+
+Rstudio: https://github.com/rstudio/plumber
+
+---
+
+class: center, middle inverse
+
+# Demo
+
+---
+
+# Deployment Basic
+
+  - Start with built in digital ocean method (https://www.rplumber.io/docs/hosting.html)
+  
+  - Entry point $5 per month
+  
+  - `plumber::do_deploy_api`
 
 ---
 

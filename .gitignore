@@ -5,6 +5,7 @@
 
 # compiled README
 *.html
-
-/pres/index_cache/*
-/pres/index_files/*
+ 
+# cached presentation files
+/pres/RWithFriends_chache/*
+/pres/RWithFriends_files/*
