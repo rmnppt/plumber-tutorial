@@ -73,18 +73,8 @@ Examples:
 
 `https://duckduckgo.com/?q=hamburg+R+user+group`
 
----
+`https://www.imdb.com/find?q=bat+man`
 
-
-# One option: A REST API
-
-`www.some-address.de/some-functionality?with-parameters`
-
-Examples:
-
-```{r}
-"https://{{duckduckgo.com}}/?q=hamburg+R+user+group"
-```
 ---
 
 # `plumber` to the rescue
@@ -113,101 +103,51 @@ class: center, middle inverse
 
 # Deployment Basic
 
-  - Start with built in digital ocean method (https://www.rplumber.io/docs/hosting.html)
+  - Start with built in digital ocean method*
   
   - Entry point $5 per month
   
   - `plumber::do_deploy_api`
 
----
-
-# Our clients
-
-<div id="clients">
-<img src="assets/shell.png"></img><img src="assets/sustrans.png"></img>
-<img src="assets/yorkshire.png"></img><img src="assets/hastings.png"></img>
-<img src="assets/Pragmatic.png"></img><img src="assets/nhs.png"></img>
-<img src="assets/royal_statistical_society.jpg"></img><img src="assets/Francis_Crick_Institute.png"></img>
-<img src="assets/Ministry_of_Defence.png"></img><img src="assets/University_of_Manchester.png"></img>
-</div>
-
----
-background-image: url(assets/Rlogo_fade.png)
-
-<!-- A background image -->
-
-# A brief history of R
-
-  - 1993: Research project in Auckland, NZ  
-  
-  - 1995: R released as open-source software
-  
-  - 1997:
-    - R core group formed
-    - April 1st Mailing list started 
-    - April 23rd: CRAN is started (3 mirrors); now $\sim$ 140 mirrors
-
-  - 2000: R 1.0.0 released
-
-  - 2003: R Foundation founded
-
-  - 2004: Version 2.0.0
-
-  - 2013: Version 3.0.0
-
----
-
-# Mathematics
-
-  * Not great for Mathematics; only basic support. 
-  
-  * Only __single__ line equations
-$$y = \beta_0 + \beta_1 x + \epsilon$$
-
---
-  
-  * Use double dashes for pausing
-
-
----
-layout:false 
-background-image: url(assets/gandalf.jpg)
-class: center, inverse
-# Use `layout:false` to remove the header/footer
-
----
-
-# Two columns is 
-
-
-.pull-left[
-1. Left column
-
-1. Another point
-
-]
-
-.pull-right[
-1. Now to the right
-
-1. Yep*
-]
-
-.footnote[[*] I'm a footnote.]
-
----
-
-layout: true
-`r add_border(inverse=FALSE)`
-
----
-
-# Highlight code lines
-
-```{r}
-# Figure scale set in knitr_options.R
-# Can't highlight multiple lines
-library(ggplot2)
-ggplot(cars) + 
-{{  geom_point(aes(speed, dist))}}
+```{r echo=FALSE, out.width="200px"}
+knitr::include_graphics("assets/rage1.jpg")
 ```
+
+.footnote[[*] Plumber Docs https://www.rplumber.io/docs/hosting.html]
+
+---
+
+# Deployment Advanced
+
+  - install web server manually and configure resources (Docker Compose or pm2)*
+  
+  - multiple R processes running concurrently
+  
+  - harder to do but more scaleable
+
+```{r echo=FALSE, out.width="250px"}
+knitr::include_graphics("assets/rage2.jpg")
+```
+
+.footnote[[*] Plumber Docs https://www.rplumber.io/docs/hosting.html]
+
+---
+  
+# Deployment Experimental
+
+  - Configure app engine on GCC*
+  
+  - Harder, less support but most scaleable and fully managed
+
+```{r echo=FALSE, out.width="300px"}
+knitr::include_graphics("assets/rage3.png")
+```
+
+.footnote[[*] Mark Edmonson https://github.com/MarkEdmondson1234/serverless-R-API-appengine]
+
+---
+
+# Appendix
+
+---
+
