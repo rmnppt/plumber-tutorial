@@ -40,7 +40,7 @@ layout: false
 
 .pull-left[
 
-- Web developers
+- Web/Dashboard integrations
   
 - App developers
   
@@ -73,7 +73,7 @@ Examples:
 
 `https://duckduckgo.com/?q=hamburg+R+user+group`
 
-`https://www.imdb.com/find?q=bat+man`
+`https://www.imdb.com/find?q=batman&s=tt`
 
 ---
 
@@ -98,6 +98,16 @@ Rstudio: https://github.com/rstudio/plumber
 class: center, middle inverse
 
 # Demo
+
+---
+
+# My use cases
+
+  - Providing forecasting interface for disease outbreak detection.
+  
+  - Providing recommendation algorithm for business.
+  
+  - Exposing SEO algorithms for marketing developers.
 
 ---
 
@@ -149,5 +159,32 @@ knitr::include_graphics("assets/rage3.png")
 
 # Appendix
 
+  - Who is https://www.blockspring.com/ ?
+  
+  - What about [Apple Core ML](https://developer.apple.com/documentation/coreml) or [Google ML Kit](https://developers.google.com/ml-kit/)
+
 ---
 
+# [jumpingrivers.com/dates](https://www.jumpingrivers.com/dates)
+
+- Wed Jun 13 2018 - Introduction to R (Hamburg)
+
+- Thu Jun 14 2018 - Mastering the tidyverse (Hamburg)
+
+- Fri Jun 15 2018 - Next Steps in the Tidyverse (Hamburg)
+
+- Wed Jun 20 2018 - Automated Reporting (first steps towards Shiny) (Hamburg)
+
+- Thu Jun 21 2018 - Interactive Graphics with Shiny (Hamburg)
+
+- Wed Jun 27 2018 - Predictive Analytics (Hamburg)
+
+---
+
+# Get started
+
+  - github.com/rmnppt/plumber-tutorial
+  
+  - www.rplumber.io
+  
+---
