@@ -145,7 +145,7 @@ knitr::include_graphics("assets/rage2.jpg")
   
 # Deployment Experimental
 
-  - Configure app engine on GCC*
+  - Configure app engine on Google Cloud Compute*
   
   - Harder, less support but most scaleable and fully managed
 
@@ -161,7 +161,17 @@ knitr::include_graphics("assets/rage3.png")
 
   - Who is https://www.blockspring.com/ ?
   
+  - How could you forget! [R Studio Connect](https://www.rstudio.com/products/connect/)
+  
   - What about [Apple Core ML](https://developer.apple.com/documentation/coreml) or [Google ML Kit](https://developers.google.com/ml-kit/)
+
+ - Microsoft/Azure ???
+ 
+ - H2o Steam
+ 
+ - Fiery
+ 
+ - AWS/Lambda
 
 ---
 
