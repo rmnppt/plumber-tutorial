@@ -24,9 +24,11 @@ layout: true
 `r add_border(inverse=TRUE)`
 ---
 
-# My Story (relevant I promise!)
+# github.com/rmnppt/plumber tutorial
 
-  ![biofilms](assets/biofilm.jpg)
+## roman@jumpingrivers.com / @rmnppt
+
+![github-repo](assets/github-screenshot.png)
 
 ---
 
@@ -35,7 +37,56 @@ layout: false
 
 ---
 
-# Expose R to other people/things.
+# My Story (relevant I promise!)
+
+  ![biofilms](assets/biofilm.jpg)
+
+---
+
+# Expose R to other people/things
+
+.pull-left[
+
+## Who needs plumber?
+
+  - Reporting, Automated Reporting
+  
+  - Publishing, Web Publishing
+  
+  - Building systems/software
+
+]
+
+.pull-right[
+
+  ![friends](assets/friends.jpg)
+
+]
+
+---
+
+# Expose R to other people/things
+
+.pull-left[
+
+## Who needs plumber?
+
+  - ~~Reporting, Automated Reporting~~
+  
+  - ~~Publishing, Web Publishing~~
+  
+  - Building systems/software
+]
+
+.pull-right[
+
+  ![friends](assets/friends.jpg)
+
+]
+
+---
+
+# Expose R to other people/things
 
 
 .pull-left[
@@ -43,6 +94,8 @@ layout: false
 - Web/Dashboard integrations
   
 - App developers
+
+- DataBase Developers
   
 - Data Scientists
   
@@ -165,29 +218,25 @@ knitr::include_graphics("assets/rage3.png")
   
   - What about [Apple Core ML](https://developer.apple.com/documentation/coreml) or [Google ML Kit](https://developers.google.com/ml-kit/)
 
- - Microsoft/Azure ???
- 
- - H2o Steam
- 
- - Fiery
- 
- - AWS/Lambda
+ - Others including (Microsoft/Azure, H2o Steam, Fiery, AWS/Lambda)
 
 ---
 
 # [jumpingrivers.com/dates](https://www.jumpingrivers.com/dates)
 
-- Wed Jun 13 2018 - Introduction to R (Hamburg)
+## Hamburg
 
-- Thu Jun 14 2018 - Mastering the tidyverse (Hamburg)
+- Wed Jun 13 2018 - Introduction to R
 
-- Fri Jun 15 2018 - Next Steps in the Tidyverse (Hamburg)
+- Thu Jun 14 2018 - Mastering the tidyverse
 
-- Wed Jun 20 2018 - Automated Reporting (first steps towards Shiny) (Hamburg)
+- Fri Jun 15 2018 - Next Steps in the Tidyverse
 
-- Thu Jun 21 2018 - Interactive Graphics with Shiny (Hamburg)
+- Wed Jun 20 2018 - Automated Reporting (first steps towards Shiny)
 
-- Wed Jun 27 2018 - Predictive Analytics (Hamburg)
+- Thu Jun 21 2018 - Interactive Graphics with Shiny
+
+- Wed Jun 27 2018 - Predictive Analytics
 
 ---
 
